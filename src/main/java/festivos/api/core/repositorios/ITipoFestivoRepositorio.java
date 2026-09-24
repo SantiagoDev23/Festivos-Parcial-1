@@ -11,6 +11,8 @@ public interface ITipoFestivoRepositorio {
 
     Optional<TipoFestivo> obtenerPorId(int id);
 
+    List<TipoFestivo> buscarPorTipo(String tipo);
+
     TipoFestivo guardar(TipoFestivo tipo);
 
     boolean eliminar(int id);

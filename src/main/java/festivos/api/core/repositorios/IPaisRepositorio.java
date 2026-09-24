@@ -11,6 +11,8 @@ public interface IPaisRepositorio {
 
     Optional<Pais> obtenerPorId(int id);
 
+    List<Pais> buscarPorNombre(String nombre);
+
     Pais guardar(Pais pais);
 
     boolean eliminar(int id);
